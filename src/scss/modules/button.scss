@@ -1,0 +1,33 @@
+.button {
+    display: flex;
+    max-width: 185px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border: 1px solid $mainFontColor;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12.5px;
+    color: $mainFontColor;
+    transition: all 0.25s;
+
+    &_large {
+        font-size: 15px;
+        letter-spacing: 1px;
+        border: 2px solid $mainFontColor;
+        max-width: 275px;
+        height: 45px;
+    }
+}
+
+@media (hover: hover) {
+    .button {
+        &:hover {
+            color: #fff;
+            background-color: $default-color;
+            border: none;
+        }
+    }
+}
